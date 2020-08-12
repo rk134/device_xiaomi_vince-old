@@ -349,10 +349,12 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.perf@2.0.vendor \
-    vendor.qti.hardware.perf@2.1.vendor \
     android.hardware.power.stats@1.0-service.mock \
     android.hardware.power-service.vince-libperfmgr
+
+# Perf
+PRODUCT_PACKAGES += \
+    libqti-perfd-client
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/power-libperfmgr/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json \
