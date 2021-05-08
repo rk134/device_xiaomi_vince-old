@@ -67,11 +67,6 @@ DEVICE_BLOB_ROOT="${ANDROID_ROOT}"/vendor/"${VENDOR}"/"${DEVICE}"/proprietary
 
 function blob_fixup() {
 	case "${1}" in
-
-	vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc)
-	    sed -i 's/fps_hal/vendor.fps_hal/' "${2}"
-	    sed -i 's/group.*/& uhid/' "${2}"
-	;;
 	vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so)
 	    "${PATCHELF_0_8}" --remove-needed "libprotobuf-cpp-lite.so" "${2}"
 	;;

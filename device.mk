@@ -204,7 +204,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fakelogprint \
     libshims_gxfpd \
-    android.hardware.biometrics.fingerprint@2.1
+    android.hardware.biometrics.fingerprint@2.1-service.vince
 
 # FM
 PRODUCT_PACKAGES += \
