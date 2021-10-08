@@ -385,8 +385,8 @@ PRODUCT_PACKAGES += \
     qti_telephony_utils.xml \
     telephony-ext
 
-PRODUCT_BOOT_JARS += \
-    telephony-ext
+#PRODUCT_BOOT_JARS += \
+#    telephony-ext
 
 # Sensors
 PRODUCT_PACKAGES += \
@@ -460,5 +460,5 @@ PRODUCT_PACKAGES += \
     libnl \
     libshim_wfdmmsink
 
-PRODUCT_BOOT_JARS += \
-    WfdCommon
+#PRODUCT_BOOT_JARS += \
+#    WfdCommon
