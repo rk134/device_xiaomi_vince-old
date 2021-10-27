@@ -381,8 +381,7 @@ PRODUCT_PACKAGES += \
     init.soundcontrol.rc \
     init.target.rc \
     init.veth_ipa_config.sh \
-    ueventd.qcom.rc \
-    init.sdcard.sh
+    ueventd.qcom.rc
 
 # RenderScript HAL
 PRODUCT_PACKAGES += \
