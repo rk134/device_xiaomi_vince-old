@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arcane_vince.mk
+    $(LOCAL_DIR)/aosp_vince.mk
 
 COMMON_LUNCH_CHOICES := \
-    arcane_vince-user \
-    arcane_vince-userdebug \
-    arcane_vince-eng
+    aosp_vince-user \
+    aosp_vince-userdebug \
+    aosp_vince-eng
