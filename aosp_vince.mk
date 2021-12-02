@@ -28,7 +28,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 $(call inherit-product, device/xiaomi/vince/device.mk)
 
 # Inherit some common ArrowOS stuff.
-$(call inherit-product, vendor/arcane/config/common.mk)
+$(call inherit-product, vendor/aosp/config/common.mk)
 ARCANE_DEVICE := vince
 ARCANE_MAINTAINER := rk134 - unofficial
 ARCANE_GAPPED := true 
