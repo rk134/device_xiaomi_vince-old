@@ -28,15 +28,25 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 $(call inherit-product, device/xiaomi/vince/device.mk)
 
 # Inherit some common ArrowOS stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-ARCANE_DEVICE := vince
-ARCANE_MAINTAINER := rk134 - unofficial
-ARCANE_GAPPED := true 
-TARGET_SUPPORTS_BLUR := true 
+$(call inherit-product, vendor/xdroid/config/common_full_phone.mk)
+#xdroid
+TARGET_FACE_UNLOCK_SUPPORTED := true
+XDROID_BUILD_TYPE := UNOFFICIAL
+XDROID_BUILD_TYPE := STBL
+XDROID_BOOT_DARK := true
+XDROID_UI_BLUR := true
+TARGET_BOOT_ANIMATION_RES := 1080
+
+#arcane
+#ARCANE_DEVICE := vince
+#ARCANE_MAINTAINER := rk134 - unofficial
+#ARCANE_GAPPED := true 
+
+#TARGET_SUPPORTS_BLUR := true 
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
-PRODUCT_NAME := aosp_vince
+PRODUCT_NAME := xdroid_vince
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 5 Plus
 PRODUCT_MANUFACTURER := Xiaomi
