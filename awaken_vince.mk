@@ -28,11 +28,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 $(call inherit-product, device/xiaomi/vince/device.mk)
 
 # Inherit some common ArrowOS stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
+$(call inherit-product, vendor/awaken/config/common.mk)
+
+# xtras
+AWAKEN_BUILD_TYPE := UNOFFICIAL
+USE_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+TARGET_INCLUDE_STOCK_ARCORE := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
-PRODUCT_NAME := arrow_vince
+PRODUCT_NAME := awaken_vince
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 5 Plus
 PRODUCT_MANUFACTURER := Xiaomi
