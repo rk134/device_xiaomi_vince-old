@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_vince.mk
+    $(LOCAL_DIR)/syberia_vince.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_vince-user \
-    arrow_vince-userdebug \
-    arrow_vince-eng
+    syberia_vince-user \
+    syberia_vince-userdebug \
+    syberia_vince-eng
