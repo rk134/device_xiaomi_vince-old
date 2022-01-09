@@ -171,7 +171,7 @@ PRODUCT_COPY_FILES += \
 
 # Dirac
 PRODUCT_PACKAGES += \
-	Dirac
+    Dirac
 
 # Display
 PRODUCT_PACKAGES += \
@@ -202,8 +202,6 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    fakelogprint \
-    libshims_gxfpd \
     android.hardware.biometrics.fingerprint@2.1
 
 # FM
@@ -416,8 +414,6 @@ PRODUCT_PACKAGES += \
     librmnetctl.vendor \
     libtinyxml.vendor
 
-
-
 #PRODUCT_BOOT_JARS += \
 #    telephony-ext
 
@@ -452,9 +448,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     vendor/qcom/opensource/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
-
-# VNDK
-$(foreach target, $(shell cat $(LOCAL_PATH)/vndk.txt), $(eval PRODUCT_PACKAGES += $(target).vendor))
 
 PRODUCT_PACKAGES += \
     libstdc++.vendor
