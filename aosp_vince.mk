@@ -34,7 +34,7 @@ WITH_GAPPS := false
 
 # MAINTAINER STUFF
 ARCANA_MAINTAINER := rk134
-ARCANA_OFFICIAL := false
+ARCANA_OFFICIAL := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
