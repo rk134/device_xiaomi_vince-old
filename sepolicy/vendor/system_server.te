@@ -26,6 +26,7 @@ allow system_server mm-qcamerad:binder { call };
 
 # Service manager
 allow system_server default_android_service:service_manager { add };
+allow system_server default_android_hwservice:hwservice_manager { find };
 
 # Touch Panel
 allow system_server proc_touchpanel:dir search;
