@@ -29,10 +29,13 @@ $(call inherit-product, device/xiaomi/vince/device.mk)
 
 # Inherit some common ArcanaOS stuff.
 $(call inherit-product, vendor/aosp/config/common.mk)
-TARGET_BOOT_ANIMATION_RES := 1080
-WITH_GAPPS := false
+TARGET_BOOT_ANIMATION_RES := 720
+WITH_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # MAINTAINER STUFF
+ARCANA_DEVICE := vince
 ARCANA_MAINTAINER := rk134
 ARCANA_OFFICIAL := true
 
