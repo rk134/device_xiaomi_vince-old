@@ -754,7 +754,8 @@ vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service|fc513e8527eb2a
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc|035243ca68a2aa98baa20fe34d2f0e7df0728ee7
 
 # Fingerprint (FPC) - from vince
-vendor/lib64/hw/fingerprint.default.so|07e66268244733eadb117ef5b4fa24651b370e78
+vendor/lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.default.so|1d6ad32d111819ea4d69c5c97d935aea6aa24fb3
+
 
 # Fingerprint (Extension) - from vince
 -vendor/app/FingerprintExtensionService/FingerprintExtensionService.apk|47d6458be8aece1ad609371baa09a1516564b755
