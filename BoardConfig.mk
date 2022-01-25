@@ -168,10 +168,6 @@ BOARD_VENDORIMAGE_PARTITION_SIZE := 872415232
 # Peripheral manager
 TARGET_PER_MGR_ENABLED := true
 
-# Power
-TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power/power-mode.cpp
-TARGET_TAP_TO_WAKE_NODE := "/sys/devices/platform/soc/78b7000.i2c/i2c-3/3-0020/input/input2/wake_gesture"
-
 # Qualcomm
 BOARD_USES_QCOM_HARDWARE := true
 OVERRIDE_QCOM_HARDWARE_VARIANT := msm8996-R
