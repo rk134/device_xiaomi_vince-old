@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/awaken_vince.mk
+    $(LOCAL_DIR)/lineage_vince.mk
 
 COMMON_LUNCH_CHOICES := \
-    awaken_vince-user \
-    awaken_vince-userdebug \
-    awaken_vince-eng
+    lineage_vince-user \
+    lineage_vince-userdebug \
+    lineage_vince-eng
