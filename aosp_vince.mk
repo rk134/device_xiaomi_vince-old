@@ -28,15 +28,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 $(call inherit-product, device/xiaomi/vince/device.mk)
 
 # Inherit some common crDroid stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common.mk)
 TARGET_BOOT_ANIMATION_RES := 720
-WITH_GAPPS := true
-TARGET_GAPPS_ARCH := arm64
+#WITH_GAPPS := true
+#TARGET_GAPPS_ARCH := arm64
 TARGET_FACE_UNLOCK_SUPPORTED := true
+
+# MAINTAINER STUFF
+ARCANA_DEVICE := vince
+ARCANA_MAINTAINER := rk134
+ARCANA_OFFICIAL := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
-PRODUCT_NAME := lineage_vince
+PRODUCT_NAME := aosp_vince
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 5 Plus
 PRODUCT_MANUFACTURER := Xiaomi
